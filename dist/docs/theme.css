@@ -1,0 +1,214 @@
+/*--------- sample theme --------------*/
+
+body {
+	font-family: sans-serif;
+	font-size: 0.9em;
+}
+
+
+pre
+{
+	margin: 5px 0;
+	font-size: 12px;
+	background-color: #EEE;
+	border: 1px solid #DDD;
+	padding: 5px;
+	line-height: 1.5em;
+	color: #444;
+	overflow: auto;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.07) 0 1px 2px inset;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+h6 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+tt
+{
+	background-color: #F5FFF5;
+	padding: 3px 5px;
+}
+
+.banner .bar{
+  background-color: #EBEFF9;
+  border-bottom: 1px solid #6B90DA;
+  color: #333;
+}
+
+code {
+	font-size: 1.1em;
+}
+
+a:link, a:visited
+{
+	color: blue;
+}
+
+
+a:hover {
+	text-decoration: underline;
+}
+
+a[name]:hover {
+    text-decoration: none;
+}
+
+
+hr {
+}
+
+.summaryTable {
+	margin-top: 0.5em;
+  border: 1px solid #999;
+}
+
+.summaryTableHeader {
+	background-color: #627C9D;
+  color: white;
+	font-size: 1.3em;
+  padding: 5px 10px;
+}
+
+
+.summaryTable .summaryItem {
+  border: none;
+  border-top: 1px solid #999;
+  padding: 8px;
+  padding-left: 30px;
+}
+
+.summaryTable .summaryItem .summaryItemDef a:link, .summaryTable .summaryItem .summaryItemDef a:visited{
+  color: #00C;
+  font-weight: bold;
+}
+
+
+.type {
+	color: green;
+}
+
+.summaryTable .summaryItem .summaryItemDef .type a:link, .summaryTable .summaryItem .summaryItemDef .type a:visited{
+  color: green;
+  font-weight: normal;
+}
+
+
+.summaryTable .summaryItemRef
+{
+	font-weight: normal;
+}
+
+
+.summaryTable .inheritanceSummary 
+{
+	border: none;
+}
+
+.sectionHeader {
+	background-color: #627C9D;
+  color: white;
+	font-size: 1.3em;
+  padding: 5px 10px;
+  border: 0px;
+}
+
+.elementName {
+}
+
+.paddedDetails {
+	font-size: 0.9em;
+}
+
+.paddedDetails code {
+	font-weight: bolder;
+}
+
+.details h3 {
+  margin-left: 10px;
+}
+
+.details > div{
+  margin-left: 30px;
+}
+.details > div > code{
+  background-color: #efefef;
+  padding: 2px 5px;
+  margin: 2px 0px;
+  display: block;
+}
+
+.modifiers
+{
+	color: blue;
+}
+
+.logicalDetail .summaryTable
+{
+	display: inherit;
+}
+
+.navigation{
+  border: 1px solid #D8D8D8
+}
+
+.navigation h2{
+  background-color: #EAEAEA;
+  color: #225c95;
+  text-align: left;
+}
+.navigation ul.navContent h2 a{
+  color: #225c95;
+}
+.navigation ul.navContent.closed h2 a{
+  color: #333;
+}
+
+.navigation ul.navContent2 a:link, .navigation ul.navContent2 a:visited {
+  color: #225c95;
+}
+
+.navigation ul.navContent2 a.currentNode:link, .navigation ul.navContent2 a.currentNode:visited {
+  background-color: #627C9D;
+  color: white;
+  padding: 0px 3px;
+}
+
+.navTree .closed span.node, .navTree .open span.node{
+  background-position: center center;
+}
+
+.navbaritem
+{
+	background-color: #66CCCC;
+}
+
+.navbaritem a
+{
+    background-color: #66CCCC;
+    color: black;
+    text-decoration: underline;
+}
+
+/** this is to show how to hide parent names */
+.overview .parent
+{
+	/*display: none;*/
+}
+
+a.searchItem
+{
+    color: black;
+}
+
+a.jgdSelectedItem.searchItem 
+{
+	color: white;
+	text-decoration: none;
+}
+
