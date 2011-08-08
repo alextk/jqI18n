@@ -1,14 +1,15 @@
 /*
-* jqI18n - jQuery plugin for rendering dialog
+* jqI18n - jQuery based localization mixin
 *
-* Version: 0.0.1a
+* Version: 0.0.1
+* Build: 2
 * Copyright 2011 Alex Tkachev
 *
 * Dual licensed under MIT or GPLv2 licenses
 *   http://en.wikipedia.org/wiki/MIT_License
 *   http://en.wikipedia.org/wiki/GNU_General_Public_License
 *
-* Date: Sun Jul 17 19:48:23 2011 +0300
+* Date: 08/08/2011 10:05:57
 */
 
 (function($) {
@@ -70,8 +71,12 @@
       return result;
     },
 
-    register: function(locale, tranlsations) {
-      this._regional[locale] = tranlsations;
+    register: function(locale, tranlsations, override) {
+      if(override === true){
+        this._regional[locale] = tranlsations;
+      } else {
+        this._regional[locale] = $.extend(true, this._regional[locale] || {}, tranlsations);
+      }
     }
 
   });

@@ -57,8 +57,12 @@
       return result;
     },
 
-    register: function(locale, tranlsations) {
-      this._regional[locale] = tranlsations;
+    register: function(locale, tranlsations, override) {
+      if(override === true){
+        this._regional[locale] = tranlsations;
+      } else {
+        this._regional[locale] = $.extend(true, this._regional[locale] || {}, tranlsations);
+      }
     }
 
   });
