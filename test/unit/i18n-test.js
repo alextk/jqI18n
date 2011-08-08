@@ -68,3 +68,22 @@ test("translate()", function() {
 
 
 });
+
+test("register()", function() {
+  var obj = this.obj;
+
+  obj.i18n.register('en-US', {
+    age: '456'
+  });
+
+  equals(obj.i18n.locale(), 'en-US');
+  equals(obj.i18n.t('age'), '456');
+
+  obj.i18n.register('en-US', {
+    age: '456'
+  }, true);
+
+  equals(obj.i18n.locale(), 'en-US');
+  equals(obj.i18n.t('age'), '456');
+  equals(obj.i18n.t('messages.intro'), 'messages.intro');
+});
