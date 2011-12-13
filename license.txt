@@ -2,13 +2,13 @@
 * jqI18n - jQuery based localization mixin
 *
 * Version: 0.0.1
-* Build: 2
+* Build: 5
 * Copyright 2011 Alex Tkachev
 *
 * Dual licensed under MIT or GPLv2 licenses
 *   http://en.wikipedia.org/wiki/MIT_License
 *   http://en.wikipedia.org/wiki/GNU_General_Public_License
 *
-* Date: 08/08/2011 10:05:57
+* Date: 13 Dec 2011 21:28:38
 */
 
